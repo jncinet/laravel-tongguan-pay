@@ -1,0 +1,33 @@
+{
+    "name": "jncinet/laravel-tongugan-pay",
+    "description": "tongguan pay service.",
+    "keywords": [
+        "laravel",
+        "qihucms",
+        "tongguan",
+        "pay"
+    ],
+    "homepage": "https://www.qihucms.com",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "zhangye",
+            "email": "y@qilephp.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^6.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Qihucms\\TongGuanPay\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Qihucms\\TongGuanPay\\TongGuanPayServiceProvider"
+            ]
+        }
+    }
+}
