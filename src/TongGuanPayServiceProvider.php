@@ -4,7 +4,7 @@ namespace Qihucms\TongGuanPay;
 
 use Illuminate\Support\ServiceProvider;
 
-class TongGuanPayProvider extends ServiceProvider
+class TongGuanPayServiceProvider extends ServiceProvider
 {
     /**
      * Register services.
