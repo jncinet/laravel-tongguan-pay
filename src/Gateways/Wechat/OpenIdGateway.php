@@ -14,7 +14,7 @@ use Qihucms\TongGuanPay\Gateways\Support;
 
 class OpenIdGateway implements GatewayInterface
 {
-    const URL = 'http://tgjf.833006.biz/tgPosp/services/payApi/authCode2openId';
+    const URL = 'http://ipay.833006.net/tgPosp/services/payApi/authCode2openId';
 
     /**
      * 参数：

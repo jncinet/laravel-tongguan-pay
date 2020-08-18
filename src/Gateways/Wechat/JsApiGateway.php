@@ -14,7 +14,7 @@ use Qihucms\TongGuanPay\Gateways\Support;
 
 class JsApiGateway implements GatewayInterface
 {
-    const URL = 'http://tgjf.833006.biz/tgPosp/services/payApi/wxJspay';
+    const URL = 'http://ipay.833006.net/tgPosp/services/payApi/wxJspay';
 
     /**
      * @param array $order
@@ -28,9 +28,17 @@ class JsApiGateway implements GatewayInterface
             throw new InvalidArgumentException('参数错误');
         }
         // 异步回调，缓存签名
-        $data['account'] = config('tongguan.account', '13974747474');
-        $data['sign'] = Support::GenerateSign($data, false);
+        $order['account'] = config('tongguan.account', '13974747474');
+        $data = array_merge($order, [
+            'notifyUrl' => $order['notify_url'],
+            'payMoney' => $order['total_amount'],
+            'lowOrderId' => $order['out_trade_no'],
+        ]);
 
-        return Support::requestApi(self::URL, $data);
+        unset($data['notify_url'], $data['total_amount'], $data['out_trade_no']);
+
+        $order['sign'] = Support::GenerateSign($data, false);
+
+        return Support::requestApi(self::URL, $order);
     }
 }

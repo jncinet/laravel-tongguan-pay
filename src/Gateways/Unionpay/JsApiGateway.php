@@ -15,7 +15,7 @@ use Qihucms\TongGuanPay\Gateways\Support;
 
 class JsApiGateway implements GatewayInterface
 {
-    const URL = 'http://tgjf.833006.biz/tgPosp/services/payApi/ylJsPay1';
+    const URL = 'http://ipay.833006.net/tgPosp/services/payApi/ylJsPay1';
 
     /**
      * @param array $data

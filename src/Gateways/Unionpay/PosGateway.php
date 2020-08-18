@@ -14,7 +14,7 @@ use Qihucms\TongGuanPay\Gateways\Support;
 
 class PosGateway implements GatewayInterface
 {
-    const URL = 'http://tgjf.833006.biz/tgPosp/services/payApi/unifiedorder';
+    const URL = 'http://ipay.833006.net/tgPosp/services/payApi/unifiedorder';
 
     /**
      * @param array $data

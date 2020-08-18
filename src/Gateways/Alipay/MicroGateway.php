@@ -16,7 +16,7 @@ use Qihucms\TongGuanPay\Gateways\Support;
 
 class MicroGateway implements GatewayInterface
 {
-    const URL = 'http://tgjf.833006.biz/tgPosp/services/payApi/micropay';
+    const URL = 'http://ipay.833006.net/tgPosp/services/payApi/micropay';
 
     /**
      * @param array $data

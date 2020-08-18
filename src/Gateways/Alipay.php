@@ -21,14 +21,14 @@ class Alipay implements GatewayApplicationInterface
      * Const url.
      */
     const URL = [
-        'query' => 'http://tgjf.833006.biz/tgPosp/services/payApi/orderQuery',
-        'refund' => 'http://tgjf.833006.biz/tgPosp/services/payApi/refund',
-        'refund_many' => 'http://tgjf.833006.biz/tgPosp/services/payApi/reverse/v2',
-        'query_refund' => 'http://tgjf.833006.biz/tgPosp/services/payApi/queryRefund',
-        'query_many_refund' => 'http://tgjf.833006.biz/tgPosp/payApi/queryRefundList',
-        'cancel' => 'http://tgjf.833006.biz/tgPosp/services/payApi/reverse',
-        'close' => 'http://tgjf.833006.biz/tgPosp/services/payApi/closeTradeOrder',
-        'qrcode' => 'http://tgjf.833006.biz/tgPosp/services/payApi/allQrcodePay',
+        'query' => 'http://ipay.833006.net/tgPosp/services/payApi/orderQuery',
+        'refund' => 'http://ipay.833006.net/tgPosp/services/payApi/refund',
+        'refund_many' => 'http://ipay.833006.net/tgPosp/services/payApi/reverse/v2',
+        'query_refund' => 'http://ipay.833006.net/tgPosp/services/payApi/queryRefund',
+        'query_many_refund' => 'http://ipay.833006.net/tgPosp/payApi/queryRefundList',
+        'cancel' => 'http://ipay.833006.net/tgPosp/services/payApi/reverse',
+        'close' => 'http://ipay.833006.net/tgPosp/services/payApi/closeTradeOrder',
+        'qrcode' => 'http://ipay.833006.net/tgPosp/services/payApi/allQrcodePay',
     ];
 
     /**

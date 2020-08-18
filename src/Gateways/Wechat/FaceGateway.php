@@ -14,7 +14,7 @@ use Qihucms\TongGuanPay\Gateways\Support;
 
 class FaceGateway implements GatewayInterface
 {
-    const URL = 'http://tgjf.833006.biz/tgPosp/payApi/wxFace';
+    const URL = 'http://ipay.833006.net/tgPosp/payApi/wxFace';
 
     /**
      * @param array $data

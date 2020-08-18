@@ -26,7 +26,7 @@ class Support
      */
     public static function requestApi(string $url, array $data): Collection
     {
-        $http = new Client(['timeout' => 2.0, 'verify' => false]);
+        $http = new Client(['verify' => false]);
 
         $data = self::formatParameter($data);
         $response = $http->request('POST', $url, ['json' => $data]);
@@ -114,6 +114,9 @@ class Support
     public static function GenerateSign(array $data, $sync = true): string
     {
         ksort($data);
+        $data = array_filter($data, function ($value) {
+            return '' !== $value && !is_null($value);
+        });
         $qs = '';
         foreach ($data as $key => $value) {
             if ($value !== null && $value !== '') {
